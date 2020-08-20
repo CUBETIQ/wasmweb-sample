@@ -2,6 +2,8 @@
   <h1><code>wasmweb sample</code></h1>
   
   ![Rust - WASM](https://github.com/CUBETIQ/wasmweb-sample/workflows/Rust%20-%20WASM/badge.svg)
+  [![Build status](https://ci.appveyor.com/api/projects/status/c2ybi4806wh5jsqw/branch/master?svg=true)](https://ci.appveyor.com/project/SomboChea/wasmweb-sample/branch/master)
+  [![Build Status](https://travis-ci.org/CUBETIQ/wasmweb-sample.svg?branch=master)](https://travis-ci.org/CUBETIQ/wasmweb-sample)
   
   <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
 </div>
