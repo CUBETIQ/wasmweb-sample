@@ -2,7 +2,7 @@
 name = "wasmweb-sample"
 version = "0.1.0"
 authors = ["Sambo Chea <sombochea@cubetiqs.com>"]
-edition = "2020"
+edition = "2018"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
