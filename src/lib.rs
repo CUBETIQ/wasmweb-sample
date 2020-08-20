@@ -3,6 +3,7 @@ use wasm_bindgen::prelude::*;
 extern crate web_sys;
 
 mod utils;
+mod main;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -21,8 +22,20 @@ extern {
 }
 
 #[wasm_bindgen]
+extern {
+    fn sum(a: i32, b: i32) -> i32;
+}
+
+#[wasm_bindgen]
 pub fn greet() {
     alert("Hey, CUBETIQ Solution!");
+}
+
+#[wasm_bindgen]
+pub fn just_sum() -> i32 {
+    let sum = sum(100, 50);
+    log(&format!("Just Sum {} + {} = {}", 100, 50, sum));
+    return sum;
 }
 
 #[wasm_bindgen]
