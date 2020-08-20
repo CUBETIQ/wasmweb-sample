@@ -3,7 +3,6 @@ use wasm_bindgen::prelude::*;
 extern crate web_sys;
 
 mod utils;
-mod main;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
