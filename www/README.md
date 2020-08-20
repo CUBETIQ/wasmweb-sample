@@ -1,20 +1,6 @@
 <div align="center">
-
-  <h1><code>create-wasm-app</code></h1>
-
+  <h1><code>create-wasm-app-typescript</code></h1>
   <strong>An <code>npm init</code> template for kick starting a project that uses NPM packages containing Rust-generated WebAssembly and bundles them with Webpack.</strong>
-
-  <p>
-    <a href="https://travis-ci.org/rustwasm/create-wasm-app"><img src="https://img.shields.io/travis/rustwasm/create-wasm-app.svg?style=flat-square" alt="Build Status" /></a>
-  </p>
-
-  <h3>
-    <a href="#usage">Usage</a>
-    <span> | </span>
-    <a href="https://discordapp.com/channels/442252698964721669/443151097398296587">Chat</a>
-  </h3>
-
-  <sub>Built with 🦀🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
 </div>
 
 ## About
@@ -44,6 +30,7 @@ npm init wasm-app
 - `index.ts`: example js file with a comment showing how to import and use a wasm pkg
 - `package.json` and `package-lock.json`:
   - pulls in devDependencies for using webpack:
+      - typescript
       - [`webpack`](https://www.npmjs.com/package/webpack)
       - [`webpack-cli`](https://www.npmjs.com/package/webpack-cli)
       - [`webpack-dev-server`](https://www.npmjs.com/package/webpack-dev-server)
