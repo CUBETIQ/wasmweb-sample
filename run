@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "install deps...."
+cd www && npm install
+
+echo "starting development server..."
+npm start
