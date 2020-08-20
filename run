@@ -1,5 +1,18 @@
 #!/bin/bash
 
+echo "build wasm pack..."
+wasm-pack build
+
+if [ $? -eq 0 ]
+then
+  echo -e "\e[32mBuild successfully!"
+else
+  echo -e "\e[31mBuild failed for wasm-pack into script!" >&2
+  exit 1
+fi
+
+echo -e "\e[39m"
+
 echo "install deps...."
 cd www && npm install
 
