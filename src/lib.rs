@@ -1,7 +1,7 @@
-use wasm_bindgen::prelude::*;
-use math;
-
 extern crate web_sys;
+
+use math;
+use wasm_bindgen::prelude::*;
 
 mod utils;
 
@@ -14,6 +14,11 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 #[wasm_bindgen(start)]
 pub fn run() {
     log("[WASM] internal logging...");
+}
+
+#[wasm_bindgen]
+pub fn sample() -> String {
+    "hello".into()
 }
 
 #[wasm_bindgen]

@@ -1,8 +1,7 @@
 // import * as wasm from "hello-wasm-pack";
-// import * as wasm from 'wasmweb-sample'
-//
-// wasm.log("[WEB] external logging...")
-//
-// const greeting = wasm.greet()
-// const sum = wasm.just_sum()
-// console.log("Sum of number", sum)
+// @ts-ignore
+import {just_sum,log} from 'wasmweb-sample'
+
+log("d")
+const sum = just_sum()
+console.log("Sum of number", sum)
