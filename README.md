@@ -1,8 +1,10 @@
 <div align="center">
   <h1><code>wasmweb sample</code></h1>
+  
+  ![Rust - WASM](https://github.com/CUBETIQ/wasmweb-sample/workflows/Rust%20-%20WASM/badge.svg)
+  
   <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
 </div>
-
 ## About
 
 [**📚 Read this template tutorial! 📚**][template-docs]
