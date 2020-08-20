@@ -15,5 +15,5 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("Hello, CUBETIQ!");
+    alert("Hey, CUBETIQ Solution!");
 }
