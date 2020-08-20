@@ -3,6 +3,9 @@ name = "wasmweb-sample"
 version = "0.1.0"
 authors = ["Sambo Chea <sombochea@cubetiqs.com>"]
 edition = "2018"
+description = "Just WASM Sample for CUBETIQ Solution"
+license = "MIT"
+repository = "https://github.com/CUBETIQ/wasmweb-sample.git"
 
 [dependencies.web-sys]
 version = "0.3"
@@ -40,3 +43,6 @@ wasm-bindgen-test = "0.3.13"
 [profile.release]
 # Tell `rustc` to optimize for small code size.
 opt-level = "s"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false

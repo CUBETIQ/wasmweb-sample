@@ -1,4 +1,5 @@
 use wasm_bindgen::prelude::*;
+use math;
 
 extern crate web_sys;
 
@@ -21,18 +22,13 @@ extern {
 }
 
 #[wasm_bindgen]
-extern {
-    fn sum(a: i32, b: i32) -> i32;
-}
-
-#[wasm_bindgen]
-pub fn greet() {
-    alert("Hey, CUBETIQ Solution!");
+pub fn greet() -> String {
+    "Hey, CUBETIQ Solution!".into()
 }
 
 #[wasm_bindgen]
 pub fn just_sum() -> i32 {
-    let sum = sum(100, 50);
+    let sum = math::sum(100, 50);
     log(&format!("Just Sum {} + {} = {}", 100, 50, sum));
     return sum;
 }
